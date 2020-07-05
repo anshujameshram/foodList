@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: getAppBar('Food List', Colors.orange),
       body: ListView.builder(
-          scrollDirection: Axis.horizontal,
+          scrollDirection: Axis.vertical,
           itemCount: foods.length,
           itemBuilder: (BuildContext context, int index) {
             return FoodList(food: foods[index]);
